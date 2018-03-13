@@ -9,13 +9,15 @@
 > 
 > 注意：本程序帮助能你完成挂机的机时，并不会跳过答题，如果是课后测试类的，需要最后去完成答题，才能获取学分。
 > 
-运行环境：python2.7  linux
+运行环境:
+python2.7
+安装requests库
 
 使用说明：
-	
+
 	1、配置你的用户名和公司：main.conf里的 username、password、corpcode
 	  其中，corpcode是在线学习21tb配置的合作标识，可以从login页面搜索 "corpCode" 查看隐藏的input标签的值
-	2、study.list 里面是保存需要挂机学习的课程id，需要在课程中心手动选择，比如本月需要学习12个学分，在课程中心里可以选两个6学分的课程，课程的ID可以从url的参数标识中获取
+	2、study.list 里面是保存需要优先挂机学习的课程id，需要在课程中心手动选择，比如本月需要学习12个学分，在课程中心里可以选两个6学分的课程，课程的ID可以从url的参数标识中获取
 	3、如何获取课程的ID
 	例如：http://xxx.21tb.com/els/html/courseStudyItem/courseStudyItem.learn.do?courseId=LIV01004_fjnx.com.cn&vb_server=&willGoStep=COURSE_COURSE_STUDY
 	课程ID为courseId参数的值，加到study.list中，一个课程一行
